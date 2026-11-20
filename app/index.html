@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PCP · CicloPET Bahia (G7)</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <!-- Bibliotecas livres carregadas por CDN (sem etapa de build): Supabase, Chart.js e Three.js -->
+  <script type="importmap">
+  {
+    "imports": {
+      "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm",
+      "chart.js": "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/+esm",
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="marca"><strong>PCP · CicloPET Bahia</strong><span>Planta de reciclagem de PET · G7 · ENG037</span></div>
+    <nav>
+      <a href="#/dashboard">Dashboard</a>
+      <a href="#/lancamentos">Lançamentos</a>
+      <a href="#/indicadores">Indicadores</a>
+      <a href="#/3d">Modelo 3D</a>
+      <a href="#/conferencia">Conferência</a>
+    </nav>
+    <div class="usuario">
+      <label>Data de corte <input type="date" id="dataCorte" value="2026-11-13" min="2025-12-01" max="2027-01-31"></label>
+      <span id="quem"></span>
+      <button id="btnLogin" class="sec">Entrar</button>
+    </div>
+  </header>
+  <main id="conteudo"><p class="carregando">Carregando…</p></main>
+
+  <dialog id="dlgLogin">
+    <form method="dialog" id="formLogin">
+      <h3>Entrar para lançar dados</h3>
+      <p class="nota">Qualquer pessoa vê o dashboard. Para lançar, cada integrante usa a própria conta: o sistema registra quem lançou.</p>
+      <label>E-mail <input type="email" name="email" required></label>
+      <label>Senha <input type="password" name="senha" minlength="6" required></label>
+      <div class="linha">
+        <button value="entrar">Entrar</button>
+        <button value="criar" class="sec">Criar conta</button>
+        <button value="cancelar" class="sec" formnovalidate>Cancelar</button>
+      </div>
+      <p id="msgLogin" class="nota"></p>
+    </form>
+  </dialog>
+  <div id="toast"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

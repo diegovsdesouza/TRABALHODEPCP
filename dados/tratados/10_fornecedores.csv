@@ -1,0 +1,11 @@
+id_fornecedor,nome_fornecedor,cidade,distancia_km,categorias_atendidas
+F02,Aços Bahia Distribuição,Salvador,40,CIVIL
+F04,Metalúrgica Paraguaçu,Cachoeira,120,ESTRUTURA
+F05,Coberturas Nordeste,Recife,800,ESTRUTURA
+F06,Elétrica Dois de Julho,Salvador,40,ELETRICA; TI
+F07,Hidrotec Incêndio e Utilidades,Lauro de Freitas,30,HIDRAULICA; INCENDIO; UTILIDADES
+F08,Acabamentos Itapuã,Salvador,40,ACABAMENTO
+F09,Importadora Atlântico Equipamentos,São Paulo,1950,PROCESSO
+F10,Sistemas Industriais Vale do Aço,Belo Horizonte,1370,PROCESSO
+F11,Montec Soluções Integradas,Camaçari,45,PROCESSO
+F12,Distribuidora Preço Bom Materiais,Aracaju,330,CIVIL; ACABAMENTO; ELETRICA; HIDRAULICA

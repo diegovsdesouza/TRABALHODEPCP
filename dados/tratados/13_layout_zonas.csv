@@ -1,0 +1,15 @@
+id_zona,nome_zona,tipo_zona,id_zona_pai,x_m,y_m,largura_x_m,comprimento_y_m,altura_m
+TERRENO,Terreno do empreendimento,TERRENO,,0.0,0.0,211.4,183.3,0.0
+GALPAO,Edificação principal (envoltória),EDIFICACAO,TERRENO,40.0,89.2,126.4,79.1,10.0
+PATIO,Pátio de manobras e acessos,PATIO,TERRENO,40.0,10.0,126.4,71.2,0.2
+DOCAS,Plataforma de docas,PATIO,TERRENO,40.0,81.2,126.4,8.0,1.2
+APOIO,"Áreas de apoio (escritório, vestiários, refeitório)",APOIO,TERRENO,176.4,89.2,22.0,40.0,7.0
+UTIL,Central de utilidades e subestação,UTILIDADES,TERRENO,176.4,137.2,22.0,26.0,6.0
+CANTEIRO,Canteiro de obras (provisório),CANTEIRO,TERRENO,5.0,89.2,30.0,40.0,3.0
+FAR,Estoque coberto de fardos,PROCESSO,GALPAO,40.0,89.2,33.7,39.5,8.0
+TRI,Triagem,PROCESSO,GALPAO,73.7,89.2,29.5,39.5,8.0
+MOA,Moagem,PROCESSO,GALPAO,103.2,89.2,25.3,39.5,8.0
+LAV,Lavagem a quente,PROCESSO,GALPAO,128.5,89.2,37.9,39.5,8.0
+ENS,Ensacamento e produto acabado,PROCESSO,GALPAO,40.0,128.8,37.9,39.5,8.0
+EXT,Extrusão e peletização,PROCESSO,GALPAO,77.9,128.8,56.9,39.5,8.0
+SEC,Secagem,PROCESSO,GALPAO,134.8,128.8,31.6,39.5,8.0

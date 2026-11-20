@@ -1,0 +1,109 @@
+mes,familia,unidade,demanda,volume_atendido,pedidos_no_prazo_pct,dias_uteis
+2023-12,Pellet PET grau alimentício,toneladas,283.8,280.1,95.5,20
+2023-12,Flake PET lavado,toneladas,410.8,408.2,94.6,20
+2023-12,Subprodutos (PP/PE de tampas e rótulos),toneladas,95.9,95.7,96.0,20
+2024-01,Pellet PET grau alimentício,toneladas,298.0,297.7,96.8,22
+2024-01,Flake PET lavado,toneladas,422.2,419.2,97.3,22
+2024-01,Subprodutos (PP/PE de tampas e rótulos),toneladas,93.8,92.9,96.9,22
+2024-02,Pellet PET grau alimentício,toneladas,332.4,331.5,98.9,21
+2024-02,Flake PET lavado,toneladas,420.7,416.3,99.5,21
+2024-02,Subprodutos (PP/PE de tampas e rótulos),toneladas,97.6,96.3,98.8,21
+2024-03,Pellet PET grau alimentício,toneladas,397.4,394.2,97.8,21
+2024-03,Flake PET lavado,toneladas,444.2,443.4,96.1,21
+2024-03,Subprodutos (PP/PE de tampas e rótulos),toneladas,103.5,102.3,96.8,21
+2024-04,Pellet PET grau alimentício,toneladas,368.7,364.3,97.6,22
+2024-04,Flake PET lavado,toneladas,443.7,441.5,97.3,22
+2024-04,Subprodutos (PP/PE de tampas e rótulos),toneladas,91.8,90.8,96.4,22
+2024-05,Pellet PET grau alimentício,toneladas,390.2,384.8,96.3,22
+2024-05,Flake PET lavado,toneladas,463.3,457.6,98.0,22
+2024-05,Subprodutos (PP/PE de tampas e rótulos),toneladas,99.6,98.6,97.3,22
+2024-06,Pellet PET grau alimentício,toneladas,398.9,397.8,97.8,20
+2024-06,Flake PET lavado,toneladas,434.4,432.0,97.3,20
+2024-06,Subprodutos (PP/PE de tampas e rótulos),toneladas,107.7,107.5,97.8,20
+2024-07,Pellet PET grau alimentício,toneladas,370.9,367.2,97.8,22
+2024-07,Flake PET lavado,toneladas,439.8,433.4,96.8,22
+2024-07,Subprodutos (PP/PE de tampas e rótulos),toneladas,110.0,109.4,98.1,22
+2024-08,Pellet PET grau alimentício,toneladas,428.6,424.6,97.2,22
+2024-08,Flake PET lavado,toneladas,481.2,474.7,97.4,22
+2024-08,Subprodutos (PP/PE de tampas e rótulos),toneladas,112.0,110.8,98.1,22
+2024-09,Pellet PET grau alimentício,toneladas,422.9,421.1,95.8,21
+2024-09,Flake PET lavado,toneladas,464.3,457.9,97.1,21
+2024-09,Subprodutos (PP/PE de tampas e rótulos),toneladas,106.1,105.0,98.2,21
+2024-10,Pellet PET grau alimentício,toneladas,416.5,412.1,97.2,23
+2024-10,Flake PET lavado,toneladas,474.8,471.0,96.9,23
+2024-10,Subprodutos (PP/PE de tampas e rótulos),toneladas,110.5,110.0,96.9,23
+2024-11,Pellet PET grau alimentício,toneladas,442.8,436.6,98.1,20
+2024-11,Flake PET lavado,toneladas,469.7,462.7,98.1,20
+2024-11,Subprodutos (PP/PE de tampas e rótulos),toneladas,107.3,106.2,95.8,20
+2024-12,Pellet PET grau alimentício,toneladas,372.5,368.8,98.3,21
+2024-12,Flake PET lavado,toneladas,426.0,423.7,97.7,21
+2024-12,Subprodutos (PP/PE de tampas e rótulos),toneladas,99.4,99.3,97.8,21
+2025-01,Pellet PET grau alimentício,toneladas,386.4,382.5,97.7,22
+2025-01,Flake PET lavado,toneladas,463.5,458.7,98.1,22
+2025-01,Subprodutos (PP/PE de tampas e rótulos),toneladas,111.3,109.9,97.4,22
+2025-02,Pellet PET grau alimentício,toneladas,432.3,428.6,97.8,20
+2025-02,Flake PET lavado,toneladas,457.9,454.0,96.3,20
+2025-02,Subprodutos (PP/PE de tampas e rótulos),toneladas,111.7,110.7,97.6,20
+2025-03,Pellet PET grau alimentício,toneladas,474.9,473.1,96.9,21
+2025-03,Flake PET lavado,toneladas,483.4,483.2,96.1,21
+2025-03,Subprodutos (PP/PE de tampas e rótulos),toneladas,109.6,108.7,96.4,21
+2025-04,Pellet PET grau alimentício,toneladas,445.8,444.2,97.3,21
+2025-04,Flake PET lavado,toneladas,462.5,456.2,97.1,21
+2025-04,Subprodutos (PP/PE de tampas e rótulos),toneladas,113.7,112.6,97.4,21
+2025-05,Pellet PET grau alimentício,toneladas,502.4,496.2,97.6,21
+2025-05,Flake PET lavado,toneladas,464.1,463.5,97.8,21
+2025-05,Subprodutos (PP/PE de tampas e rótulos),toneladas,118.2,117.5,97.2,21
+2025-06,Pellet PET grau alimentício,toneladas,474.1,472.9,98.8,21
+2025-06,Flake PET lavado,toneladas,477.9,473.0,97.7,21
+2025-06,Subprodutos (PP/PE de tampas e rótulos),toneladas,112.3,111.1,97.0,21
+2025-07,Pellet PET grau alimentício,toneladas,522.2,515.3,96.9,22
+2025-07,Flake PET lavado,toneladas,520.0,516.5,96.6,22
+2025-07,Subprodutos (PP/PE de tampas e rótulos),toneladas,117.7,117.3,97.2,22
+2025-08,Pellet PET grau alimentício,toneladas,488.5,486.3,98.1,21
+2025-08,Flake PET lavado,toneladas,546.6,542.3,95.0,21
+2025-08,Subprodutos (PP/PE de tampas e rótulos),toneladas,115.7,115.7,96.7,21
+2025-09,Pellet PET grau alimentício,toneladas,592.2,591.7,94.3,22
+2025-09,Flake PET lavado,toneladas,548.0,542.3,94.7,22
+2025-09,Subprodutos (PP/PE de tampas e rótulos),toneladas,118.6,117.1,95.9,22
+2025-10,Pellet PET grau alimentício,toneladas,544.1,543.7,96.2,23
+2025-10,Flake PET lavado,toneladas,549.5,547.8,95.4,23
+2025-10,Subprodutos (PP/PE de tampas e rótulos),toneladas,128.3,128.0,95.7,23
+2025-11,Pellet PET grau alimentício,toneladas,530.5,530.1,98.1,19
+2025-11,Flake PET lavado,toneladas,518.5,511.5,94.8,19
+2025-11,Subprodutos (PP/PE de tampas e rótulos),toneladas,120.4,119.6,95.3,19
+2025-12,Pellet PET grau alimentício,toneladas,465.2,460.8,97.7,22
+2025-12,Flake PET lavado,toneladas,506.8,502.6,97.1,22
+2025-12,Subprodutos (PP/PE de tampas e rótulos),toneladas,106.7,106.4,97.9,22
+2026-01,Pellet PET grau alimentício,toneladas,516.7,514.4,96.6,21
+2026-01,Flake PET lavado,toneladas,540.5,536.4,93.7,21
+2026-01,Subprodutos (PP/PE de tampas e rótulos),toneladas,122.3,120.9,96.1,21
+2026-02,Pellet PET grau alimentício,toneladas,558.3,550.4,96.3,18
+2026-02,Flake PET lavado,toneladas,492.7,491.3,97.5,18
+2026-02,Subprodutos (PP/PE de tampas e rótulos),toneladas,124.2,123.0,96.1,18
+2026-03,Pellet PET grau alimentício,toneladas,575.4,574.8,94.4,22
+2026-03,Flake PET lavado,toneladas,537.5,536.9,95.2,22
+2026-03,Subprodutos (PP/PE de tampas e rótulos),toneladas,125.2,123.5,97.1,22
+2026-04,Pellet PET grau alimentício,toneladas,578.3,570.2,95.7,20
+2026-04,Flake PET lavado,toneladas,542.4,534.6,94.0,20
+2026-04,Subprodutos (PP/PE de tampas e rótulos),toneladas,126.3,126.2,95.0,20
+2026-05,Pellet PET grau alimentício,toneladas,621.1,612.8,95.2,20
+2026-05,Flake PET lavado,toneladas,524.3,519.7,94.5,20
+2026-05,Subprodutos (PP/PE de tampas e rótulos),toneladas,129.7,129.2,93.9,20
+2026-06,Pellet PET grau alimentício,toneladas,618.4,609.3,93.8,20
+2026-06,Flake PET lavado,toneladas,535.0,527.6,93.4,20
+2026-06,Subprodutos (PP/PE de tampas e rótulos),toneladas,137.4,136.3,92.5,20
+2026-07,Pellet PET grau alimentício,toneladas,687.4,657.5,91.1,22
+2026-07,Flake PET lavado,toneladas,571.9,546.4,91.6,22
+2026-07,Subprodutos (PP/PE de tampas e rótulos),toneladas,142.4,135.8,91.1,22
+2026-08,Pellet PET grau alimentício,toneladas,658.9,656.1,93.9,21
+2026-08,Flake PET lavado,toneladas,554.2,546.3,92.3,21
+2026-08,Subprodutos (PP/PE de tampas e rótulos),toneladas,128.2,127.6,94.1,21
+2026-09,Pellet PET grau alimentício,toneladas,676.0,668.2,92.9,21
+2026-09,Flake PET lavado,toneladas,537.3,535.2,94.0,21
+2026-09,Subprodutos (PP/PE de tampas e rótulos),toneladas,132.0,130.7,91.6,21
+2026-10,Pellet PET grau alimentício,toneladas,787.0,706.8,86.0,21
+2026-10,Flake PET lavado,toneladas,575.5,512.0,86.9,21
+2026-10,Subprodutos (PP/PE de tampas e rótulos),toneladas,132.1,118.8,86.1,21
+2026-11,Pellet PET grau alimentício,toneladas,639.6,632.3,93.9,19
+2026-11,Flake PET lavado,toneladas,548.0,543.6,94.3,19
+2026-11,Subprodutos (PP/PE de tampas e rótulos),toneladas,126.2,126.1,92.9,19

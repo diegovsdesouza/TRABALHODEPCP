@@ -1,0 +1,34 @@
+id_material,descricao,unidade,categoria,preco_orcado_rs,lead_time_du,perda_orcada_pct
+ACO,Aço CA-50 cortado e dobrado,kg,CIVIL,7.2,12,6
+ARG,Argamassa industrializada,kg,CIVIL,0.62,6,8
+BIN,Conjunto de bombas de incêndio,un,INCENDIO,148000.0,50,0
+BLO,Bloco de concreto 14x19x39,un,CIVIL,3.4,8,5
+BRI,Brita graduada,m³,CIVIL,115.0,4,6
+CAB,Cabo de cobre isolado (média),m,ELETRICA,14.5,15,4
+CCM,Ponto de automação e CCM,pontos,PROCESSO,875.0,45,2
+CER,Revestimento cerâmico/porcelanato,m²,ACABAMENTO,48.0,20,7
+CON,Concreto usinado fck 30 MPa,m³,CIVIL,520.0,2,4
+DSF,Desenfardador e esteira de alimentação,m,PROCESSO,3600.0,70,0
+ECA,Eletrocalha perfurada com acessórios,m,ELETRICA,58.0,18,3
+EMT,Estrutura metálica fabricada,t,ESTRUTURA,14500.0,45,1
+END,Endurecedor de superfície,kg,CIVIL,2.9,12,5
+EXR,Extrusora com peletizadora,un,PROCESSO,2400000.0,130,0
+FOR,Fôrma de madeira compensada,m²,CIVIL,55.0,6,10
+LUM,Luminária LED industrial,un,ELETRICA,420.0,25,1
+LVG,Módulo de lavagem (tanque/centrífuga),un,PROCESSO,155000.0,95,0
+MNH,Moinho com transporte pneumático,un,PROCESSO,270000.0,90,0
+OPT,Separador óptico / mesa de triagem,un,PROCESSO,490000.0,110,0
+PAV,Pavimento intertravado 8 cm,m²,CIVIL,62.0,15,4
+PFE,Painel de fechamento lateral,m²,ESTRUTURA,118.0,28,3
+PVC,Tubo PVC e conexões,m,HIDRAULICA,31.0,6,5
+QGB,Painel elétrico (QGBT/CCM),un,ELETRICA,62000.0,55,0
+RED,"Ponto de rede (cabo, conector, patch)",un,TI,310.0,12,3
+SCD,Secador / silo pulmão,un,PROCESSO,132500.0,80,0
+SPK,Bico de sprinkler com acessórios,un,INCENDIO,68.0,20,2
+TAI,Tubo de aço ranhurado p/ incêndio,m,INCENDIO,96.0,18,4
+TEL,Tela soldada e fibras para piso,kg,CIVIL,8.4,10,5
+TIN,Tinta acrílica/epóxi,L,ACABAMENTO,21.0,7,6
+TLH,Telha termoacústica,m²,ESTRUTURA,135.0,30,3
+TPR,Tubulação de processo com suportes,m,PROCESSO,105.0,25,2
+TRF,Transformador a seco 1.500 kVA,un,ELETRICA,185000.0,70,0
+TUT,Tubulação de utilidades com suportes,m,UTILIDADES,140.0,16,4

@@ -1,0 +1,12 @@
+id_ponto,nome_ponto,tipo_ponto,x_km,y_km,volume_t_mes,custo_frete_rs_t_km
+L01,Salvador,FORNECEDOR,2,2,720.0,0.46
+L02,Feira de Santana,FORNECEDOR,-54,77,410.0,0.58
+L03,Alagoinhas,FORNECEDOR,12,102,150.0,0.66
+L04,Serrinha,FORNECEDOR,-46,149,120.0,0.57
+L05,Cruz das Almas,FORNECEDOR,-64,30,110.0,0.61
+L06,Camaçari,CLIENTE,28,38,780.0,0.57
+L07,Simões Filho,CLIENTE,4,22,330.0,0.6
+L08,Aracaju,CLIENTE,161,227,180.0,0.56
+TA,Terreno A: Feira de Santana (escolhido),TERRENO_CANDIDATO,-53,83,,
+TB,Terreno B: Camaçari,TERRENO_CANDIDATO,27,38,,
+TC,Terreno C: Alagoinhas,TERRENO_CANDIDATO,12,103,,

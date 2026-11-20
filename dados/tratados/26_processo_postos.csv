@@ -1,0 +1,8 @@
+id_posto,sequencia,nome_posto,id_zona,tempo_ciclo_padrao_s,recursos_site_atual,recursos_projeto,operadores_por_recurso,disponibilidade_prevista,eficiencia_prevista,qualidade_prevista,investimento_por_recurso_rs
+PT01,1,Recepção e desenfardamento,FAR,747,1,1,3,0.92,0.88,0.99,1870000
+PT02,2,Triagem óptica e manual,TRI,901,1,1,6,0.9,0.86,0.94,6860000
+PT03,3,Moagem,MOA,1530,2,2,1,0.86,0.88,0.985,540000
+PT04,4,Lavagem a quente,LAV,1080,1,1,2,0.87,0.9,0.975,3410000
+PT05,5,Secagem,SEC,654,1,1,1,0.92,0.93,0.995,1590000
+PT06,6,Extrusão e peletização,EXT,2340,0,2,2,0.84,0.9,0.98,4800000
+PT07,7,Ensacamento em big bag,ENS,857,1,1,2,0.95,0.9,0.999,210000

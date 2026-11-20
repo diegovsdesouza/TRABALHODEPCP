@@ -1,0 +1,3 @@
+# Caderno manuscrito
+
+Cópias escaneadas das folhas M1 a M6, assinadas (PDF ou JPG), uma por arquivo: M1_nome.pdf …
