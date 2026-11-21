@@ -65,5 +65,7 @@ Todo número do relatório indica a tabela e o filtro de onde saiu.
 - **R10** Disponibilidade, utilização, MTBF e MTTR
 - **R11** Dashboard com filtro de data
 - **R12** Modelo 3D com controle de data e clique na zona
+- **Prazo** Caminho crítico atualizado e previsão de término (Parte 3)
+- **Conferência com o caderno** M1, M3 e M4
 
 **Publicar:** no GitHub, *Settings → Pages → Source: Deploy from a branch → main / (root) → Save*. Em 1 a 2 minutos o link acima fica no ar.

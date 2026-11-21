@@ -13,6 +13,7 @@ No painel do Supabase: **SQL Editor → New query**. Para **cada arquivo abaixo,
 | 3 | `03_carga_bloco_B_execucao.sql` | Tabelas 15 a 24, histórico tratado até 06/11 (o maior arquivo, ~450 KB) |
 | 4 | `04_carga_bloco_C_operacao.sql` | Tabelas 25 a 30 |
 | 5 | `05_funcoes.sql` | Funções de cálculo: avanço, valor agregado, PPC, RUP, histograma, suprimentos, equipamentos, 3D |
+| 6 | `06_prazo_oee.sql` | Caminho crítico (linha de base, atualizado e sub-rede M1), previsão de término, multa e OEE |
 
 **Conferência imediata:** rode `select * from fn_controle('2026-11-06');` e verifique se aparecem 1509 · 107650,2 · 25.027.069,69 · 177.
 
