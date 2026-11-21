@@ -9,6 +9,7 @@ const ABAS = {
   hist: ['Efetivo e absenteísmo (R8)', abaHist],
   supr: ['Suprimentos (R9)', abaSupr],
   equip: ['Equipamentos (R10)', abaEquip],
+  oee: ['Operação · OEE do site atual', abaOee],
 };
 
 export async function paginaIndicadores(alvo) {
@@ -103,4 +104,25 @@ async function abaEquip(box, d) {
     { campo: 'falhas', titulo: 'Falhas' }, { campo: 'mtbf_h', titulo: 'MTBF (h)', f: (v) => fmt.n(v, 1) }, { campo: 'mttr_h', titulo: 'MTTR (h)', f: (v) => fmt.n(v, 2) },
     { campo: 'custo_diarias_sem_frente', titulo: 'Custo das diárias sem frente', f: fmt.rs }])}
     <p class="fonte">fn_equipamentos · disponibilidade = 1 − (corretiva + preventiva) ÷ horas disponíveis; MTBF = operando ÷ falhas; MTTR = corretiva ÷ falhas (Anexo D). Utilização = operando ÷ disponíveis.</p></div>`;
+}
+
+async function abaOee(box) {
+  const tudo = await rpc('fn_oee', {});
+  box.innerHTML = `<div class="cartao"><h3>OEE real × previsto por posto (site atual, tabela 27)</h3>${htmlTabela(tudo, [{ campo: 'id_posto', titulo: 'Posto', t: 1 }, { campo: 'nome_posto', titulo: 'Nome', t: 1 },
+    { campo: 'turnos', titulo: 'Turnos apontados' }, { campo: 'disponibilidade', titulo: 'Disponibilidade', f: (v) => fmt.pct(v) }, { campo: 'eficiencia', titulo: 'Eficiência', f: (v) => fmt.pct(v) },
+    { campo: 'qualidade', titulo: 'Qualidade', f: (v) => fmt.pct(v) }, { campo: 'oee', titulo: 'OEE real', f: (v) => fmt.pct(v) }, { campo: 'oee_previsto', titulo: 'OEE previsto', f: (v) => fmt.pct(v) },
+    { campo: 'oee', titulo: 'Gap (p.p.)', f: (v, l) => fmt.n((v - l.oee_previsto) * 100, 1), cor: (v, l) => (v - l.oee_previsto < -0.1 ? 'neg' : '') }])}
+    <p class="fonte">fn_oee · Anexo D: operando = programado − planejada − não planejada − setup; D = operando ÷ (programado − planejada); E = qtd × ciclo ÷ operando; Q = boas ÷ produzidas</p></div>
+    <div class="cartao" style="margin-top:12px"><h3>OEE de um turno</h3><form class="lanc" id="fOee"><label>Data<input type="date" name="d" value="2026-09-28"></label>
+      <label>Turno<input type="number" name="t" value="2" min="1" max="3"></label><label>Posto<select name="p">${tudo.map((x) => `<option ${x.id_posto === 'PT03' ? 'selected' : ''}>${x.id_posto}</option>`).join('')}</select></label>
+      <div><button>Calcular</button></div></form><div id="rOee"></div></div>`;
+  const f = box.querySelector('#fOee');
+  const calc = async (ev) => {
+    ev?.preventDefault();
+    const r = await rpc('fn_oee', { p_ini: f.d.value, p_fim: f.d.value, p_posto: f.p.value, p_turno: +f.t.value });
+    box.querySelector('#rOee').innerHTML = r.length ? htmlTabela(r, [{ campo: 'programado_min', titulo: 'Programado (min)' }, { campo: 'operando_min', titulo: 'Operando (min)' },
+      { campo: 'disponibilidade', titulo: 'D', f: (v) => fmt.pct(v) }, { campo: 'eficiencia', titulo: 'E', f: (v) => fmt.pct(v) }, { campo: 'qualidade', titulo: 'Q', f: (v) => fmt.pct(v) },
+      { campo: 'oee', titulo: 'OEE', f: (v) => '<b>' + fmt.pct(v) + '</b>' }]) : '<p class="nota">Sem apontamento para esse turno.</p>';
+  };
+  f.onsubmit = calc; calc();
 }
