@@ -1,6 +1,6 @@
 import http.server, json, subprocess, os, re
 APP = '/home/claude/repo/TRABALHODEPCP/app'; MOCK = '/home/claude/teste/mock'
-ESCALAR = {'fn_kpis'}
+ESCALAR = {'fn_kpis', 'fn_prazo'}
 def psql(sql):
     r = subprocess.run(['psql', '-h', '/tmp', '-p', '5433', '-U', 'postgres', '-d', 'g7', '-tA', '-v', 'ON_ERROR_STOP=1', '-c', sql], capture_output=True, text=True)
     if r.returncode: raise Exception(r.stderr.strip())
@@ -9,6 +9,7 @@ def lit(v):
     if v is None: return 'null'
     if isinstance(v, bool): return 'true' if v else 'false'
     if isinstance(v, (int, float)): return repr(v)
+    if isinstance(v, list): return 'array[' + ','.join(lit(x) for x in v) + ']::text[]'
     return "'" + str(v).replace("'", "''") + "'"
 ident = lambda s: '"' + re.sub(r'[^a-z0-9_]', '', s) + '"'
 class H(http.server.SimpleHTTPRequestHandler):

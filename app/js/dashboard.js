@@ -14,12 +14,14 @@ const kpi = (titulo, valor, fonte, estado = '') => `<div class="kpi ${estado}"><
 export async function paginaDashboard(alvo) {
   limparGraficos();
   const d = dataCorte();
-  const [k, fases, curva, ppc, pareto, hist] = await Promise.all([
+  const [k, fases, curva, ppc, pareto, hist, pz] = await Promise.all([
     rpc('fn_kpis', { p_data: d }), rpc('fn_evm_fase', { p_data: d }), rpc('fn_curva_s', {}), rpc('fn_ppc_semana'),
-    rpc('fn_pareto_causas', {}), rpc('fn_histograma', { p_ini: '2025-12-01', p_fim: d })]);
+    rpc('fn_pareto_causas', {}), rpc('fn_histograma', { p_ini: '2025-12-01', p_fim: d }), rpc('fn_prazo', { p_data: d })]);
   const ppcAte = ppc.filter((p) => p.data_inicio <= d);
   alvo.innerHTML = `<h2>Dashboard · situação em ${fmt.data(d)} (du ${k.du})</h2>
     <div class="kpis">
+      ${kpi('Término previsto', fmt.data(pz.termino_previsto), `LB ${fmt.data(pz.termino_lb)} · contrato ${fmt.data(pz.contrato)}`, pz.atraso_vs_contrato_du > 0 ? 'ruim' : 'bom')}
+      ${kpi('Atraso sobre o contrato', pz.atraso_vs_contrato_du + ' du', 'multa ' + fmt.rs(pz.multa_rs), pz.atraso_vs_contrato_du > 0 ? 'ruim' : 'bom')}
       ${kpi('Valor planejado (VP)', fmt.mi(k.vp), 'fn_evm_fase')}
       ${kpi('Valor agregado (VA)', fmt.mi(k.va), 'rdo_producao × orcamento')}
       ${kpi('Custo real (CR)', fmt.mi(k.cr), 'custos_apropriados ≠ INDIRETO')}
