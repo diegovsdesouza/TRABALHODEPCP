@@ -12,6 +12,6 @@
 | 5 | 18/11/2026 | _[nome]_ | Nivelar o histograma (D4) | A primeira heurística, que empurrava atividades dia a dia, piorou o pico (241 pessoas) | Trocamos por programação serial por prioridade de menor IT: pico de 160 sem mudar o prazo |
 | 6 | 18/11/2026 | _[nome]_ | Projeção de demanda (D9) | O índice do mês projetou jul/2027 em vez de mar/2027 | Conferimos contra a tendência calculada à parte (1.448 t/mês) e corrigimos a fórmula |
 | 7 | 18/11/2026 | _[nome]_ | Conferir os números de controle do dossiê | — | 6 de 6 batem, inclusive os de 13/11, somados a partir dos boletins |
-| 8 | | | | | |
-| 9 | | | | | |
+| 8 | 22/11/2026| _[Ingrid]_ | Organizar os lançamentos de custos da semana do L00829 ao L00844| A IA poderia classificar incorretamente a natureza dos custos ou associar valores às atividades erradas | Conferimos os lançamentos com os documentos e verificamos a correspondência entre atividade, natureza e valor
+| 9 |22/11/2026 | _[Ingrid]_ | Apoiar a conferência final do plano semestral (6/6). | A IA poderia considerar uma atividade parcialmente realizada como concluída ou deixar de registrar uma causa do não cumprimento da meta| Conferimos o realizado em relação ao planejado e verificamos as justificativas das atividades não concluídas |
 | 10 | | | | | |
