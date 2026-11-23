@@ -4,18 +4,27 @@ Trabalho final de **ENG037 · Planejamento e Controle da Produção** (UFBA, 202
 O grupo atua como time de PCP da implantação da **planta de reciclagem de PET (do fardo ao pellet)** em Feira de Santana.
 
 - **Data de status:** 13/11/2026 · **Entrega digital:** 24/11/2026
-- **Sistema publicado:** https://diegovsdesouza.github.io/TRABALHODEPCP/app/ _(depois de ativar o GitHub Pages)_
-- **Integrantes:** _[nome, usuário do GitHub e papel principal de cada um]_
+- **Sistema publicado:** https://diegovsdesouza.github.io/TRABALHODEPCP/app/
+- **Integrantes:**
+
+| Integrante | GitHub | Papel principal |
+|---|---|---|
+| Diego Santana de Souza | [@diegovsdesouza](https://github.com/diegovsdesouza) | Coordenação, prazo e caminho crítico (D1–D3, M1), cenários e plano de ação |
+| Mirella França | [@azura856](https://github.com/azura856) | Estrutura do repositório e do banco, valor agregado e PPC (M4) |
+| Larissa Livramento | [@Larbst1234](https://github.com/Larbst1234) | Histograma e nivelamento (D4, M2), PPC e produtividade |
+| Carlos | [@carlos-santos123](https://github.com/carlos-santos123) | Operação, capacidade e OEE (D9, M3), localização e layout |
+| Bruno | [@brunoanna-cell](https://github.com/brunoanna-cell) | Suprimentos, equipamentos e qualidade (D5, D7, M5) |
+| Ingrid | [@amorisenna](https://github.com/amorisenna) | Sistema, dados e conferência, custos e fechamento da semana, cenários (M6) |
 
 ## Estrutura
 
 | Pasta | Conteúdo |
 |---|---|
 | `docs/` | Documentos D1 a D12, qualidade dos dados, diário de prompts e cópia escaneada do caderno manuscrito (`docs/caderno/`) |
-| `docs/planilhas/` | Planilhas LibreOffice (.ods) com fórmulas vivas: D1/D2, **D3 (Gantt)**, D4/D6, D8/D9 |
+| `docs/planilhas/` | Planilhas LibreOffice (.ods) com fórmulas vivas: D1/D2, **D3 (Gantt)**, D4/D6, D5/D10, D8/D9 |
 | `dados/brutos/` | As 30 tabelas originais do pacote do G7 |
 | `dados/tratados/` | As mesmas tabelas após o tratamento (ver `docs/qualidade-dos-dados.md`) |
-| `scripts/` | `tratamento_dados.py` (limpeza), `cpm.py` (rede e caminho crítico), `nivela2.py` (nivelamento de recursos) |
+| `scripts/` | `tratamento_dados.py` (limpeza), `cpm.py` (rede e caminho crítico), `nivela2.py` (nivelamento de recursos), `cenarios.py` (três cenários em 13/11) |
 | `app/` | Sistema web de acompanhamento (Parte 2): HTML + JavaScript, sem etapa de build |
 | `supabase/` | Scripts SQL do banco (tabelas, RLS, cargas, funções de cálculo) e `LEIA-ME.md` com a instalação |
 | `testes/` | Teste automatizado do site (navegador + Postgres local) usado para validar as telas antes da publicação |
@@ -35,8 +44,8 @@ python scripts/cpm.py                                                           
 | Hh até 06/11/2026 | 107.650,2 | 107.650,2 |
 | Custo direto até 06/11/2026 | R$ 25.027.069,69 | R$ 25.027.069,69 |
 | Pedidos de compra | 177 | 177 |
-| Hh até 13/11/2026 (após a semana de campo) | 110.527,8 | _a conferir no sistema_ |
-| Custo direto até 13/11/2026 | R$ 27.896.701,08 | _a conferir no sistema_ |
+| Hh até 13/11/2026 (após a semana de campo) | 110.527,8 | 110.527,8 |
+| Custo direto até 13/11/2026 | R$ 27.896.701,08 | R$ 27.896.701,08 |
 
 ## Convenções
 
