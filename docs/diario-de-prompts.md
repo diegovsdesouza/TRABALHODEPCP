@@ -14,4 +14,4 @@
 | 7 | 18/11/2026 | _[nome]_ | Conferir os números de controle do dossiê | — | 6 de 6 batem, inclusive os de 13/11, somados a partir dos boletins |
 | 8 | 22/11/2026| _[Ingrid]_ | Organizar os lançamentos de custos da semana do L00829 ao L00844| A IA poderia classificar incorretamente a natureza dos custos ou associar valores às atividades erradas | Conferimos os lançamentos com os documentos e verificamos a correspondência entre atividade, natureza e valor
 | 9 |22/11/2026 | _[Ingrid]_ | Apoiar a conferência final do plano semestral (6/6). | A IA poderia considerar uma atividade parcialmente realizada como concluída ou deixar de registrar uma causa do não cumprimento da meta| Conferimos o realizado em relação ao planejado e verificamos as justificativas das atividades não concluídas |
-| 10 | | | | | |
+| 10 |23/11/2026|Bruno |Lançar no sistema o B8 (FVS e restrições) e os custos L00813 a L00828|A IA poderia criar a R057 de novo em vez de atualizar a existente, ou lançar valor com ponto de milhar errado|Usamos "Carregar" para atualizar R057 e R069, conferimos cada custo com o documento e a Conferência fechou 6 de 6|
