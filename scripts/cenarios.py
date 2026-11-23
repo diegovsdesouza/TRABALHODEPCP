@@ -3,8 +3,9 @@ import os
 D=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','dados','tratados','')
 A=pd.read_csv(D+'03_atividades.csv').set_index('id_atividade'); P=pd.read_csv(D+'04_dependencias.csv'); LB=pd.read_csv(D+'31_linha_base.csv').set_index('id_atividade')
 C=pd.read_csv(D+'11_calendario.csv'); cal=C.dropna(subset=['dia_util_projeto']).set_index('dia_util_projeto').data
-p=pd.read_csv(D+'16_rdo_producao.csv'); p=p[p.data<='2026-11-06']
-av=(p.groupby('id_atividade').quantidade_executada.sum()/A.quantidade_orcada).clip(upper=1).fillna(0)
+import sys
+AV=sys.argv[1] if len(sys.argv)>1 else D+'32_avanco_1311.csv'  # avanço por atividade em 13/11 (fn_avanco_atividade)
+av=pd.read_csv(AV).set_index('id_atividade').avanco.astype(float)
 S=int(C[C.data=='2026-11-13'].dia_util_projeto.iloc[0])  # status du 237
 CONTR=288; LBEND=278; MULTA=22100; GANHO=37300
 def rede(fator=None, lags=None, ini_extra=None):
